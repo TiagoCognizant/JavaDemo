@@ -4,6 +4,7 @@ public class Table {
 	
 	void printTable (int n) { //Method not Synchronized
 		System.out.println("thread --" + Thread.currentThread().getName() + " has entered the bank");
+		
 		synchronized(this)  {
 			System.out.println("thread --" + Thread.currentThread().getName() + " has entered the ATM");
 			
